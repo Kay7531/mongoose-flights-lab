@@ -122,6 +122,10 @@ function addToMeal(req, res) {
           res.redirect("/flights")
         })
     })
+    .catch(err => {
+      console.log(err);
+      res.redirect("/flights")
+    })
 }
 
 
